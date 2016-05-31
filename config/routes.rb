@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   patch '/tasks/:id/complete', to: "tasks#complete", as: :complete_task
 
-  root '/tasks#index'
+  root to: 'tasks#index'
   # # display a list of all tasks
   # get '/tasks', to: "tasks#index"
   # # return an form to create a new tasks
