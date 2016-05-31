@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h1>TO DO</h1>
+  <div class="tasks">
+  <% @tasks.each do  | task | %>
+  <p>
+    <% if task.completed %>
+    <%= "[X]" %>
+    <% else %>
+    <%= "[ ]" %>
+    <% end %>
+    <%= link_to task.name, task_path(task) %>
+  <% end %>
+  </p>
+  <%= link_to "create new", new_task_path  %>
+</div>
+</div>
+

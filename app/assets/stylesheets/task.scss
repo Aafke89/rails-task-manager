@@ -1,0 +1,36 @@
+// Place all the styles related to the Task controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.tasks {
+  margin: auto;
+  width: 200px;
+  background-color: rgba(20, 0, 20, 0.1);
+  text-align: left;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: black;
+    font-style: italic;
+  }
+}
+
+.link {
+  color: blue;
+}
