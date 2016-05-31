@@ -4,11 +4,11 @@
 <p class="bold"><%= @task.name %></p>
 <p><%= @task.description %></p>
 <p><% if @task.completed %>
-  <%= [X] %>
+  [X]
   <% else %>
-  <%= [ ] %>
+ [ ]
 <% end %></p>
-<%= link_to "complete",  task_path, method: :update, class: "link" %> <br>
+<%= link_to "complete",  complete_task_path, method: :patch, class: "link" %> <br>
 <%= link_to "edit", edit_task_path, class: "link"  %> <br>
 <%= link_to "delete", task_path, method: :delete, data: {confirm: "are you sure to delete #{@task.name}" },  class: "link"  %> <br>
 <%= link_to "back to list?", tasks_path, class: "link"  %>
